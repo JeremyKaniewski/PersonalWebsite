@@ -1,0 +1,52 @@
+.wrapper {
+    top: 0; bottom: 0; right: 0; left: 0;
+    height: 100;
+    width: 100%;
+
+    background-image: url('../../public/img/skyline.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-areas: ". . . ." ". Title Title ." ". Title Title ." ". . . .";
+
+    color: #ECF0F1;
+    font-family: 'Archivo', sans-serif;
+    scroll-behavior: smooth;
+
+    .titleText {
+        grid-area: Title;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+
+        h1 {
+            font-size: 6em;
+            margin-top: -2rem;
+            color: #fff;
+            text-decoration: underline;
+        }
+    
+        h2 {
+            font-size: 3em;
+        }
+    
+        .subTitle {
+            p {
+                margin-top: 2em;
+                font-size: 1.45em;
+                font-family: 'Spectral', serif;
+            }
+
+            b {
+                font-size: 1.75em;
+                font-family: 'Spectral', serif;
+            }
+        }
+    }
+}
+
