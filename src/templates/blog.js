@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 export const query = graphql`
   query($slug: String!) {
-    contentfulBlogPost(slug: {eq: $slug}) {
+    contentfulProjects(slug: {eq: $slug}) {
       title
       date(formatString: "MMMM Do, YYYY")
       body {

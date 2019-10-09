@@ -28,24 +28,35 @@
             font-size: 6em;
             margin-top: -2rem;
             color: #fff;
-            text-decoration: underline;
         }
     
         h2 {
             font-size: 3em;
+        }
+
+        hr {
+            background-color: #ECF0F1;
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 2em;
+            height: 3px;
         }
     
         .subTitle {
             p {
                 margin-top: 2em;
                 font-size: 1.45em;
-                font-family: 'Spectral', serif;
+                font-family: 'Spectral', 'Sans-Serif';
             }
 
             b {
-                font-size: 1.75em;
-                font-family: 'Spectral', serif;
+                font-size: 1.45em;
+                font-family: 'Spectral', 'Sans-Serif';
+                margin-top: -1em;
             }
+
+            line-height: 0.5em;
+            margin-top: -0.5em;
         }
     }
 }

@@ -5,10 +5,11 @@ const landing = () => {
     return(
         <div className={landingStyles.wrapper}>
             <div className={landingStyles.titleText}>
-                <h2><i>Hello, i'm</i></h2>
+                <h2><i>Hello, I'm</i></h2>
                 <h1>Jeremy</h1>
+                <hr />
                 <div className={landingStyles.subTitle}>
-                    <p>I'm an undergraduate student at the University of Texas at Dallas studying</p>
+                    <p>I'm an undergrad student at the UT Dallas studying</p>
                     <b>Information Technology and Systems</b>  
                 </div>
             </div>
