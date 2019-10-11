@@ -28,9 +28,9 @@ const Blog = (props) => {
   }
   return (
       <Layout>
-          <h1>{props.data.contentfulBlogPost.title}</h1>
-          <p>{props.data.contentfulBlogPost.date}</p>
-          {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+          <h1>{props.data.contentfulProjects.title}</h1>
+          <p>{props.data.contentfulProjects.date}</p>
+          {documentToReactComponents(props.data.contentfulProjects.body.json, options)}
       </Layout>
   )
 }

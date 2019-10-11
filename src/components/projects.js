@@ -23,6 +23,14 @@ const Projects = () => {
         } 
     `)
 
+    var viewMore
+
+    if (data.allContentfulProjects.edges.length >= 3) {
+        viewMore = <button className={ProjectsStyle.loadMore}>View more</button>
+    } else {
+        viewMore = null
+    }
+
     return (
         <div className={ProjectsStyle.wrapper}>
             <h1 className={ProjectsStyle.title}>Projects</h1>
@@ -39,7 +47,7 @@ const Projects = () => {
                         )
                     })}
                 </ol>
-                <button className={ProjectsStyle.loadMore}>View more</button>
+                { viewMore } 
             </div>
         </div>
     )
